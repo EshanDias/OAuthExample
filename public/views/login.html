@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>OAuth Example | Login</title>
+</head>
+
+<body>
+    <h1>OAuth 2.0 with Facebook</h1>
+    <button onclick="connectToFb()">Login Using Facebook</button>
+</body>
+<script>
+    function connectToFb() {
+        var AUTH_ENDPOINT = "https://www.facebook.com/dialog/oauth";
+        var RESPONSE_TYPE = "code";
+        var CLIENT_ID = "2141894289406132";
+        var REDIRECT_URI = "http://localhost:3030/FBOAuht";
+        var SCOPE = "public_profile email";
+
+        var requestEndpoint = AUTH_ENDPOINT + "?" +
+            "response_type=" + encodeURIComponent(RESPONSE_TYPE) + "&" +
+            "client_id=" + encodeURIComponent(CLIENT_ID) + "&" +
+            "redirect_uri=" + encodeURIComponent(REDIRECT_URI) + "&" +
+            "scope=" + encodeURIComponent(SCOPE);
+
+        window.location.href = requestEndpoint;
+    }
+</script>
+
+</html>

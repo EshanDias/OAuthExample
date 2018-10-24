@@ -1,0 +1,33 @@
+{
+  "name": "oauthexample",
+  "version": "1.0.0",
+  "description": "OAuth Example. Login Using Facebook, getting access for public profice and displaying on the home page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EshanDias/OAuthExample.git"
+  },
+  "keywords": [
+    "OAuth",
+    "2.0"
+  ],
+  "author": "Eshan Dias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EshanDias/OAuthExample/issues"
+  },
+  "homepage": "https://github.com/EshanDias/OAuthExample#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "fb": "^2.0.0",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
